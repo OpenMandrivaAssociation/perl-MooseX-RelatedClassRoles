@@ -2,14 +2,14 @@
 %define upstream_version 0.004
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Apply roles to a class related to yours
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/MooseX/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/MooseX-RelatedClassRoles
+Source0:	https://cpan.metacpan.org/authors/id/H/HD/HDP/MooseX-RelatedClassRoles-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
