@@ -1,15 +1,13 @@
 %define upstream_name    MooseX-RelatedClassRoles
-%define upstream_version 0.004
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.004
+Release:	7
 
 Summary:	Apply roles to a class related to yours
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/MooseX-RelatedClassRoles
-Source0:	https://cpan.metacpan.org/authors/id/H/HD/HDP/MooseX-RelatedClassRoles-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/H/HD/HDP/MooseX-RelatedClassRoles-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -25,7 +23,7 @@ rather apply roles to make your custom 'foo_class' instead of manually
 setting up a subclass.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
